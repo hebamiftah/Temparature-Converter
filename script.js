@@ -14,6 +14,7 @@ if (storedValue) {
 const calculateTemperature = (e) => {
   e.preventDefault()
   localStorage.setItem('temperature', input.value)
+  console.log(input.value)
   updateOutput()
 }
 
@@ -46,6 +47,6 @@ function updateOutput() {
 }
 
 // event listeners
-input.addEventListener('input', updateOutput)
+input.addEventListener('input', calculateTemperature)
 form.addEventListener('submit', calculateTemperature)
 form.addEventListener('reset', resetData)
