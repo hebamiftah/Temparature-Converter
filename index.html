@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <form id="form">
+        <h2>Temperature Converter</h2>
+        <div class="radio">
+          <div>
+            <input type="radio" name="unit" value="celsius" checked />
+            <span>Celsius</span>
+          </div>
+          <div>
+            <input type="radio" name="unit" value="fahrenheit" />
+            <span>Fahrenheit</span>
+          </div>
+        </div>
+        <br />
+        <div class="input">
+          <input type="text" name="input" placeholder="Enter temperature" />
+          <br />
+          <input
+            type="text"
+            name="output"
+            readonly
+            placeholder="Converted temperature"
+          />
+          <br />
+        </div>
+
+        <div class="btn">
+          <button class="reset" type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+    <a href="https://hebamiftah.github.io/PortFolio/">Back to Portfolio</a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
